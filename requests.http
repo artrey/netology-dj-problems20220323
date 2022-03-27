@@ -1,0 +1,27 @@
+GET http://localhost:8000/products/
+
+###
+
+POST http://localhost:8000/products/
+Content-Type: application/json
+
+{
+  "name": "New product",
+  "price": 1000,
+  "positions": [
+    {
+      "order": 1,
+      "qty": 22
+    }
+  ]
+}
+
+###
+
+PATCH http://localhost:8000/products/1/
+Content-Type: application/json
+
+{
+  "name": "New product!",
+  "price": 15000
+}
